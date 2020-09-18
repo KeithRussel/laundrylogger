@@ -1,6 +1,7 @@
 {
   "name": "laundry-logger",
   "version": "1.0.0",
+  "description": "",
   "main": "server.js",
   "engines": {
     "node": "12.18.0",
@@ -28,6 +29,5 @@
   "devDependencies": {
     "concurrently": "^5.3.0",
     "nodemon": "^2.0.4"
-  },
-  "description": ""
+  }
 }
