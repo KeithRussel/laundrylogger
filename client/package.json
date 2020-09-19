@@ -14,7 +14,7 @@
     "react-materialize": "^3.9.3",
     "react-moment": "^0.9.7",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
+    "react-scripts": "^3.4.3",
     "react-transition-group": "^4.4.1",
     "react-uuid": "^1.0.2"
   },
