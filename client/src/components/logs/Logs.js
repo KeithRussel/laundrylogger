@@ -9,10 +9,6 @@ const Logs = () => {
 
   const { logs, filtered, getLogs, loading } = logContext;
 
-  // if (loading || logs === null) {
-  //   return <Preloader />;
-  // }
-
   useEffect(() => {
     getLogs();
     // eslint-disable-next-line

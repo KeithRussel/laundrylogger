@@ -29,7 +29,7 @@ const Home = () => {
         <Launderers />
         <ul className='collection with-header'>
           <li className='collection-header center'>
-            <h4>Logs</h4>
+            <h5>Logs</h5>
           </li>
           <Logs />
         </ul>

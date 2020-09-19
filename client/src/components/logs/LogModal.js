@@ -104,7 +104,6 @@ const LogModal = () => {
         startingTop: '4%',
       }}
     >
-      {/* <h4>{current ? 'Edit Laundry Log' : 'Add Laundry Log'}</h4> */}
       <div className='row'>
         <form className='col s12' onSubmit={onSubmit}>
           <div className='row'>
@@ -167,15 +166,6 @@ const LogModal = () => {
           </div>
         </form>
       </div>
-      {/* <div className='modal-footer'>
-        <a
-          href='#!'
-          className='modal-close waves-effect waves-green btn'
-          onClick={onSubmit}
-        >
-          Submit
-        </a>
-      </div> */}
     </Modal>
   );
 };
