@@ -1,5 +1,4 @@
 node_modules/
-config/
 
 /client/build/
 /client/node_modules
@@ -15,7 +14,3 @@ yarn-debug.log*
 yarn-error.log*
 
 
-
-config/db.js
-config/default.json
-config/production.json
