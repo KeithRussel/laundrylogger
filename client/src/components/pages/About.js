@@ -12,9 +12,9 @@ const About = () => {
           </p>
           <div className='divider'></div>
           <h5>Updates</h5>
-          <ul class='collection'>
-            <li class='collection-item'>404 error page added</li>
-            <li class='collection-item'>About us page added</li>
+          <ul className='collection'>
+            <li className='collection-item'>404 error page added</li>
+            <li className='collection-item'>About us page added</li>
           </ul>
         </div>
       </div>

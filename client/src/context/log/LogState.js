@@ -91,6 +91,8 @@ const LogState = (props) => {
         type: UPDATE_LOG,
         payload: res.data,
       });
+
+      console.log(res.data);
     } catch (err) {
       dispatch({
         type: LOG_ERROR,

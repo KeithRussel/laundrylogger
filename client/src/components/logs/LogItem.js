@@ -25,7 +25,7 @@ const LogItem = ({ log }) => {
         >
           {message}
         </a>
-        {attention ? (
+        {attention && attention ? (
           <span className='badge red' style={{ color: '#fff' }}>
             Urgent
           </span>

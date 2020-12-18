@@ -6,9 +6,7 @@ import OptionLaunderers from '../launderers/OptionLaunderers';
 
 const LogModal = () => {
   const logContext = useContext(LogContext);
-
-  // const d = Date(Date.now());
-  // let a = d.toString();
+  const [isChecked, setIsChecked] = useState(false);
 
   const [log, setLog] = useState({
     message: '',
@@ -19,7 +17,6 @@ const LogModal = () => {
   });
 
   const { addLog, current, clearCurrent, updateLog } = logContext;
-  // const newDate = new Date();
   useEffect(() => {
     if (current !== null) {
       setLog(current);
@@ -37,18 +34,17 @@ const LogModal = () => {
 
   const { message, kilo, attention, launderer } = log;
 
-  const multiCalls = (e) => {
-    onChange(e);
-    onCheck(e);
-  };
+  // const multiCalls = (e) => {
+  //   onChange(e);
+  //   onCheck(e);
+  // };
 
   const onChange = (e) => {
     setLog({ ...log, [e.target.name]: e.target.value });
   };
 
   const onCheck = (e) => {
-    const name = e.target.name;
-    setLog({ ...log, [name]: e.target.checked });
+    setLog({ ...log, [e.target.name]: e.target.checked });
     console.log('onCheck clicked');
   };
 
@@ -89,7 +85,6 @@ const LogModal = () => {
       bottomSheet={false}
       fixedFooter={false}
       header={current ? 'Edit Laundry Log' : 'Add Laundry Log'}
-      // open={false}
       options={{
         dismissible: true,
         endingTop: '10%',
@@ -153,13 +148,14 @@ const LogModal = () => {
           <div className='row' style={{ marginLeft: '0' }}>
             <label>
               <input
-                id='indeterminate-checkbox'
                 type='checkbox'
-                checked={attention ? true : false}
+                onChange={onCheck}
+                checked={attention}
                 name='attention'
                 // value={attention}
-                onChange={multiCalls}
-                // checked={true}
+                // onChange={(e) =>
+                //   setLog({ ...log, [e.target.name]: e.target.checked })
+                // }
               />
               <span>Urgent</span>
             </label>

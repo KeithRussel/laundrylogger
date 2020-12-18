@@ -69,6 +69,8 @@ router.put('/:id', auth, async (req, res) => {
   if (launderer) logFields.launderer = launderer;
   if (date) logFields.date = date;
 
+  console.log(req.body.attention);
+
   try {
     let log = await Log.findById(req.params.id);
 
