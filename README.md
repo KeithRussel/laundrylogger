@@ -1,6 +1,7 @@
 ﻿# Laundry-logger
 
 A Simple laundry logger app to use to track the logs of laundry sets.
+Check the [sample link](https://desolate-shelf-62199.herokuapp.com/)
 
 ![](laundry.gif)
 
